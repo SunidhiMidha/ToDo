@@ -1,12 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import store from './components/store'
+// import { Provider } from 'react-redux';
+// import { addTask, ADD_TASK, COM_TASK, toggleTask } from './components/actions/types';
+
+// const myState = store.getState()
+// store.subscribe(() => console.log(store.getState()));
+// const unsubscribe = store.subscribe(() =>
+//   console.log('State after dispatch: ', store.getState())
+// )
+// store.dispatch(addTask("hello"))
+// store.dispatch(toggleTask("clean the car"))
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <Provider store = {store} > */}
+      <App />
+    {/* </Provider> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
